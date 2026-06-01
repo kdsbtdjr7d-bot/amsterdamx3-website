@@ -111,6 +111,30 @@ color:#ff2b2b;
 margin-bottom:15px;
 }
 
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,0.85);
+padding:20px;
+text-align:center;
+z-index:1000;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.navbar a:hover{
+color:#ff2b2b;
+text-shadow:0 0 10px red;
+}
+
 .footer{
 padding:40px;
 text-align:center;
@@ -131,8 +155,15 @@ margin:0 10px;
 <body>
 
 <div class="overlay">
+    
+<nav class="navbar">
+    <a href="#home">HOME</a>
+    <a href="#servers">SERVERS</a>
+    <a href="#features">FEATURES</a>
+    <a href="https://discord.gg/amsterdamx3">DISCORD</a>
+</nav>
 
-<section class="hero">
+<section id="home" class="hero">
 
 <div class="hero-content">
 
@@ -147,7 +178,7 @@ JOIN DISCORD
 </div>
 
 </section>
-<section class="section">
+<section id="servers" class="section">
 
 <h2>OUR SERVERS</h2>
 
@@ -177,7 +208,7 @@ JOIN DISCORD
 
 </section>
 
-<section class="section">
+<section id="features" class="section">
 
 <h2>WHY PLAY AMSTERDAM X3?</h2>
 
